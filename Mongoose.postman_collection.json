@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "9c01eda4-4633-4d2b-9dc2-4359950e9059",
+		"name": "Mongoose",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42994846"
+	},
+	"item": [
+		{
+			"name": "ObtenerClientes",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "crearCliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Javier\",\r\n    \"email\":\"javier@gmail.com\",\r\n    \"telefono\":545654\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "clienteporId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/api/clientes/67d4c96b283fecd1151b558f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"clientes",
+						"67d4c96b283fecd1151b558f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizarCliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Alejandro\",\r\n    \"email\":\"alej2@gmail.com\",\r\n    \"telefono\":\"71555648\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/clientes/67d4c96b283fecd1151b558f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"clientes",
+						"67d4c96b283fecd1151b558f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarcliente",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "crearPedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"clienteId\":\"67d4c91d283fecd1151b558c\",\r\n    \"fecha_pedido\":\"2025-03-14\",\r\n     \"productos\": [{\r\n        \"producto_id\":\"2\",\r\n        \"cantidad\":3,\r\n        \"precio_unitario\":50\r\n     }],\r\n     \"total\" :150\r\n\r\n  }\r\n  \r\n  \r\n   \r\n    \r\n    \r\n     \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/pedidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerPedidos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/api/pedidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pedidoPorId",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "actualizarPedido",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarPedido",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/api/pedidos/67d4cb58283fecd1151b5596",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"pedidos",
+						"67d4cb58283fecd1151b5596"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
